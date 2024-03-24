@@ -1,23 +1,15 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Button } from "react-native";
 import SampleCard from "./components/SampleCard";
+import {styles} from "./styles/style"
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <View style={styles.card}>
       <Text>Open up App.js to start working on your app!</Text>
-      <Button onPress={() => alert("Hello World!")} title="Press Me" />
+      <Button onPress={() => alert("Hello Russworld!")} title="Press Me" />
       <SampleCard />
       <StatusBar style="auto" />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
